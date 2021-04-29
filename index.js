@@ -88,7 +88,7 @@ app.post('/task/new', (req,res)=>{
     const done=false;
     const currentdate = new Date();
 
-    const object = {name, priority,currentdate, done};
+    const object = {name, priority,date:currentdate, done};
     if(price!=='undefined'){
         object.price=price;
     }
